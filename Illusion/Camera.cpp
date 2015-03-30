@@ -30,6 +30,13 @@ void Camera::initMatrix(float width, float height) {
                              glm::vec3(0, 0, 0),
                              glm::vec3(0, 1, 0));
     glm::quat a;
+    glViewport(0, 0, width, height);
+}
+
+void Camera::screenReshape(float w, float h) {
+    _width = w; _height = h;
+    projectionMatrix = glm::perspective(45.0f, w / h, 0.1f, 100.0f);
+    glViewport(0, 0, w, h);
 }
 
 void Camera::mouseEvent(int button, int state, int x, int y) {

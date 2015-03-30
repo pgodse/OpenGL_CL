@@ -16,7 +16,7 @@ uniform vec3 dirLightVec;
 uniform vec3 dirLightColor;
 
 void main(){
-    vertWorldSpace = (modelMatrix * vec4(vertexPosition_modelspace, 1.0)).xyz;
+    vertWorldSpace = ( modelMatrix * vec4(vertexPosition_modelspace, 1.0)).xyz;
     transformedNormal = (normalMatrix * normalize(vec4(normalVector, 1.0))).xyz;
     gl_Position = MVP * vec4(vertexPosition_modelspace, 1);
 }

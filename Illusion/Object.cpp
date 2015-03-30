@@ -42,8 +42,8 @@ glm::vec3 lightDir = glm::vec3(-1.0, 0.5, 0.3);
 glm::vec3 lightColor = glm::vec3(0.4, 0.5, 0.6);
 
 void Object::drawObject() {
-    //Compute model matrix
-    glm::mat4 modelViewMatrix = _projView * _modelMatrix;
+    //Compute MVP
+    glm::mat4 MVP = _projView * _modelMatrix;
     
     //Use the shader
     glUseProgram(shaderProgram);
@@ -59,7 +59,7 @@ void Object::drawObject() {
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
     
     //Apply uniform variables
-    glUniformMatrix4fv(uniformMVP, 1, GL_FALSE, &_projView[0][0]);
+    glUniformMatrix4fv(uniformMVP, 1, GL_FALSE, &MVP[0][0]);
     glUniformMatrix4fv(uniformModelMat, 1, GL_FALSE, &_modelMatrix[0][0]);
     glUniformMatrix4fv(uniformViewMat, 1, GL_FALSE, &_viewMatrix[0][0]);
     glUniformMatrix4fv(uniformNormalMat, 1, GL_FALSE, &_normalMatrix[0][0]);
@@ -107,6 +107,6 @@ void Object::initGeometry() {
     dirColorUniform = glGetUniformLocation(shaderProgram, "dirLightColor");
     dirVecUniform = glGetUniformLocation(shaderProgram, "dirLightVec");
     
-    Uniforms uni("dirLightColor", new Object(), shaderProgram);
+    //Uniforms uni("dirLightColor", new Object(), shaderProgram);
     
 }

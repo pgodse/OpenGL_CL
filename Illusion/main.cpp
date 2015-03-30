@@ -22,6 +22,10 @@ void display()
     glFlush();
 }
 
+void screenReshape(int w, int h) {
+    camera->screenReshape(w, h);
+}
+
 void motionFunction(int x, int y) {
     camera->mouseMove(x, y);
     glutPostRedisplay();
@@ -46,11 +50,12 @@ int main(int argc, char** argv)
     
     glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE | GLUT_DEPTH | GLUT_3_2_CORE_PROFILE);
     
-    glutInitWindowSize(500, 500);
+    glutInitWindowSize(1024, 960);
     glutInitWindowPosition(0, 0);
     glutCreateWindow("GLUT Program");
+    glutReshapeFunc(screenReshape);
     
-    camera = new Camera(CAMERA_ORBIT, 500, 500);
+    camera = new Camera(CAMERA_ORBIT, 1024, 960);
     
     glutDisplayFunc(display);
     

@@ -38,6 +38,7 @@ class Camera {
 public:
     
     Camera(CameraType type, float width, float height);
+    void screenReshape(float w, float h);
     virtual void destroy();
     
     void mouseMove(int x, int y);
