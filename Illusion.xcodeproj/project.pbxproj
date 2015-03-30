@@ -13,6 +13,7 @@
 		0D7BFCCD1AC85F8C00323D47 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFCCB1AC85F8C00323D47 /* Object.cpp */; };
 		0D7BFDD51AC878EE00323D47 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFDD31AC878EE00323D47 /* Camera.cpp */; };
 		0D7BFDD91AC8D4B400323D47 /* objloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFDD71AC8D4B400323D47 /* objloader.cpp */; };
+		0D7BFDDE1AC8EBEA00323D47 /* Uniforms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFDDC1AC8EBEA00323D47 /* Uniforms.cpp */; };
 		0DECDC971AC7A9E4007D9048 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DECDC961AC7A9E4007D9048 /* main.cpp */; };
 		0DECDC9E1AC7AA68007D9048 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DECDC9D1AC7AA68007D9048 /* OpenGL.framework */; };
 		0DECDCA01AC7AA9A007D9048 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DECDC9F1AC7AA9A007D9048 /* GLUT.framework */; };
@@ -300,6 +301,8 @@
 		0D7BFDD71AC8D4B400323D47 /* objloader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = objloader.cpp; sourceTree = "<group>"; };
 		0D7BFDD81AC8D4B400323D47 /* objloader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = objloader.hpp; sourceTree = "<group>"; };
 		0D7BFDDB1AC8D50B00323D47 /* box.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = box.obj; sourceTree = "<group>"; };
+		0D7BFDDC1AC8EBEA00323D47 /* Uniforms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Uniforms.cpp; sourceTree = "<group>"; };
+		0D7BFDDD1AC8EBEA00323D47 /* Uniforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uniforms.h; sourceTree = "<group>"; };
 		0DECDC931AC7A9E4007D9048 /* Illusion */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Illusion; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DECDC961AC7A9E4007D9048 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0DECDC9D1AC7AA68007D9048 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -666,6 +669,8 @@
 				0D7BFCBF1AC84CB000323D47 /* SimpleFragmentShader.frag */,
 				0D7BFCC01AC84CB000323D47 /* SimpleVertexShader.frag */,
 				0D7BFCBC1AC84C3600323D47 /* shader.cpp */,
+				0D7BFDDC1AC8EBEA00323D47 /* Uniforms.cpp */,
+				0D7BFDDD1AC8EBEA00323D47 /* Uniforms.h */,
 				0D7BFCBD1AC84C3600323D47 /* shader.hpp */,
 				0D7BFDD31AC878EE00323D47 /* Camera.cpp */,
 				0D7BFDD41AC878EE00323D47 /* Camera.h */,
@@ -732,6 +737,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7BFDDE1AC8EBEA00323D47 /* Uniforms.cpp in Sources */,
 				0D7BFDD51AC878EE00323D47 /* Camera.cpp in Sources */,
 				0D7BFCBE1AC84C3600323D47 /* shader.cpp in Sources */,
 				0DECDC971AC7A9E4007D9048 /* main.cpp in Sources */,

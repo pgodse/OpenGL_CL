@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2B487372-4E92-46E3-8A76-0E0CCC9FBECF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Illusion</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C6C8800E9895AAE6D01C9397F0F31E8805416A4E</key>
+		<string>https://github.com/pgodse/OpenGL_CL.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Illusion.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C6C8800E9895AAE6D01C9397F0F31E8805416A4E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pgodse/OpenGL_CL.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C6C8800E9895AAE6D01C9397F0F31E8805416A4E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C6C8800E9895AAE6D01C9397F0F31E8805416A4E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OpenGL_CL</string>
+		</dict>
+	</array>
+</dict>
+</plist>

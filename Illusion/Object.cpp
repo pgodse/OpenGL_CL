@@ -13,6 +13,7 @@
 #include <iostream>
 #include <vector>
 #include "objloader.hpp"
+#include "Uniforms.h"
 
 Object::Object() {
     
@@ -105,4 +106,7 @@ void Object::initGeometry() {
     uniformNormalMat = glGetUniformLocation(shaderProgram, "normalMatrix");
     dirColorUniform = glGetUniformLocation(shaderProgram, "dirLightColor");
     dirVecUniform = glGetUniformLocation(shaderProgram, "dirLightVec");
+    
+    Uniforms uni("dirLightColor", new Object(), shaderProgram);
+    
 }

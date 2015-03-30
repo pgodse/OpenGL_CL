@@ -21,8 +21,8 @@ class Object {
     GLuint normalBuffer;
     int _polyCount;
     //Uniforms
-    GLuint uniformMVP, uniformModelMat, uniformViewMat, uniformNormalMat;
-    GLuint dirVecUniform, dirColorUniform;
+    GLint uniformMVP, uniformModelMat, uniformViewMat, uniformNormalMat;
+    GLint dirVecUniform, dirColorUniform;
     glm::mat4 _projView, _viewMatrix, _normalMatrix, _modelMatrix;
     void destroy();
 public:
