@@ -13,7 +13,6 @@
 #include <iostream>
 #include <vector>
 #include "objloader.hpp"
-#include "Uniforms.h"
 
 Object::Object() {
     
@@ -21,14 +20,25 @@ Object::Object() {
 
 Object::Object(std::string vertexSource, std::string fragmentSource) {
     shaderProgram = LoadShaders(vertexSource.c_str(), fragmentSource.c_str());
-    
-    initGeometry();
 }
 
 void Object::destroy() {
     glDeleteBuffers(1, &vertexBuffer);
     glDeleteBuffers(1, &normalBuffer);
     glDeleteProgram(shaderProgram);
+    delete _uniforms;
+}
+
+void Object::setObjFile(std::string file) {
+    _objFile = file;
+}
+
+void Object::setModelScale(glm::vec3 scale) {
+    _modelMatrix = glm::scale(_modelMatrix, scale);
+}
+
+void Object::setModelTranslate(glm::vec3 trans) {
+    _modelMatrix = glm::translate(_modelMatrix, trans);
 }
 
 void Object::setProjectionViewMatrix(glm::mat4 projMat, glm::mat4 viewMat) {
@@ -63,8 +73,9 @@ void Object::drawObject() {
     glUniformMatrix4fv(uniformModelMat, 1, GL_FALSE, &_modelMatrix[0][0]);
     glUniformMatrix4fv(uniformViewMat, 1, GL_FALSE, &_viewMatrix[0][0]);
     glUniformMatrix4fv(uniformNormalMat, 1, GL_FALSE, &_normalMatrix[0][0]);
-    glUniform3f(dirColorUniform, lightColor.x, lightColor.y, lightColor.z);
-    glUniform3f(dirVecUniform, lightDir.x, lightDir.y, lightDir.z);
+    //glUniform3f(dirColorUniform, lightColor.x, lightColor.y, lightColor.z);
+    //glUniform3f(dirVecUniform, lightDir.x, lightDir.y, lightDir.z);
+    _uniforms->applyUniforms();
     
     glDrawArrays(GL_TRIANGLES, 0, _polyCount);
     
@@ -74,7 +85,6 @@ void Object::drawObject() {
 
 void Object::initGeometry() {
     _projView = glm::mat4(1.0);
-    _modelMatrix = glm::scale(_modelMatrix, glm::vec3(0.5, .5, .5));
     
     GLuint vertexArrayId;
     glGenVertexArrays(1, &vertexArrayId);
@@ -83,7 +93,10 @@ void Object::initGeometry() {
     std::vector<glm::vec3> vertices;
     std::vector<glm::vec2> uvs;
     std::vector<glm::vec3> normals; // Won't be used at the moment.
-    bool res = loadOBJ("box.obj", vertices, uvs, normals);
+    bool res = loadOBJ(_objFile.c_str(), vertices, uvs, normals);
+    if (!res) {
+        std::cout << "DATAL ERROR: Unable to load OBJ file: " << _objFile << std::endl;
+    }
     
     _polyCount = sizeof(vertices) / sizeof(GL_FLOAT);
     _polyCount = (int)vertices.size(); //For triangles
@@ -105,8 +118,9 @@ void Object::initGeometry() {
     
     uniformNormalMat = glGetUniformLocation(shaderProgram, "normalMatrix");
     dirColorUniform = glGetUniformLocation(shaderProgram, "dirLightColor");
-    dirVecUniform = glGetUniformLocation(shaderProgram, "dirLightVec");
+    //dirVecUniform = glGetUniformLocation(shaderProgram, "dirLightVec");
     
-    //Uniforms uni("dirLightColor", new Object(), shaderProgram);
-    
+    _uniforms = new Uniforms(shaderProgram);
+    _uniforms->addUniform("dirLightVec", lightDir);
+    _uniforms->addUniform("dirLightColor", lightColor);
 }

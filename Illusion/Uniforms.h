@@ -25,15 +25,14 @@ class Uniforms {
     
     struct Uniform{
         GLint uniformLocation;
-        void *value;
+        glm::vec3 valueVec3;
         UniformType type;
     };
     
     std::vector<Uniform> _uniformList;
 public:
-    Uniforms(std::string name, void *value, UniformType type, GLuint program);
     Uniforms(GLuint program);
-    void addUniform(std::string name, void *value, UniformType type);
+    void addUniform(std::string name, glm::vec3 value);
     
     virtual void applyUniforms();
 };

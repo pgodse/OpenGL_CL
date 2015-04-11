@@ -8,12 +8,11 @@
 
 #include "Uniforms.h"
 
-Uniforms::Uniforms(std::string name, void *value, UniformType type, GLuint program) {
+Uniforms::Uniforms(GLuint program) {
     _shaderProgram = program;
-    addUniform(name, value, type);
 }
 
-void Uniforms::addUniform(std::string name, void *value, UniformType type) {
+void Uniforms::addUniform(std::string name, glm::vec3 value) {
     GLint uniformLocation = glGetUniformLocation(_shaderProgram, name.c_str());
     if (uniformLocation == -1) {
         std::cout << "Warning:: Couldn't find uniform in shader program " << name << std::endl;
@@ -21,9 +20,9 @@ void Uniforms::addUniform(std::string name, void *value, UniformType type) {
     }
     
     Uniform uni;
-    uni.value = value;
+    uni.valueVec3 = value;
     uni.uniformLocation = uniformLocation;
-    uni.type = type;
+    uni.type = Type_Uniform3f;
     
     _uniformList.push_back(uni);
 }
@@ -31,5 +30,12 @@ void Uniforms::addUniform(std::string name, void *value, UniformType type) {
 
 
 void Uniforms::applyUniforms() {
+    std::vector<Uniform>::iterator itr = _uniformList.begin();
+    while (itr != _uniformList.end()) {
+        if (itr->type == Type_Uniform3f && itr->uniformLocation != -1) {
+            glUniform3f(itr->uniformLocation, itr->valueVec3.x, itr->valueVec3.x, itr->valueVec3.z);
+        }
+        itr++;
+    }
     
 }
