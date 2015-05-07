@@ -73,8 +73,6 @@ void Object::drawObject() {
     glUniformMatrix4fv(uniformModelMat, 1, GL_FALSE, &_modelMatrix[0][0]);
     glUniformMatrix4fv(uniformViewMat, 1, GL_FALSE, &_viewMatrix[0][0]);
     glUniformMatrix4fv(uniformNormalMat, 1, GL_FALSE, &_normalMatrix[0][0]);
-    //glUniform3f(dirColorUniform, lightColor.x, lightColor.y, lightColor.z);
-    //glUniform3f(dirVecUniform, lightDir.x, lightDir.y, lightDir.z);
     _uniforms->applyUniforms();
     
     glDrawArrays(GL_TRIANGLES, 0, _polyCount);
@@ -123,4 +121,7 @@ void Object::initGeometry() {
     _uniforms = new Uniforms(shaderProgram);
     _uniforms->addUniform("dirLightVec", lightDir);
     _uniforms->addUniform("dirLightColor", lightColor);
+    _uniforms->addUniform("baseColor", glm::vec3(0.2, 0.2, 0.2));
+    _uniforms->addUniform("specularColor", glm::vec3(0.2, 0.3, 0.27));
+    _uniforms->addUniform("ambientColor", glm::vec3(0.15, 0.15, 0.15));
 }

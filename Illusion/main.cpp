@@ -36,16 +36,22 @@ void mouseEvent(int button, int state, int x, int y) {
     glutPostRedisplay();
 }
 
+void keyboardEvent(unsigned char key, int x, int y) {
+    camera->keyboardEvent(key, x, y);
+    glutPostRedisplay();
+}
+
 void myinit() {
     Object *object = new Object("SimpleVertexShader.frag", "SimpleFragmentShader.frag");
     object->setObjFile("box.obj");
-    object->setModelTranslate(glm::vec3(3.0, 0.0, 0.0));
+    object->setModelTranslate(glm::vec3(3.0, 0.0, 5.0));
     object->initGeometry();
     camera->addObject(object);
     
     //Add sphere
     Object *globe = new Object("SimpleVertexShader.frag", "SimpleFragmentShader.frag");
     globe->setObjFile("globe.obj");
+    globe->setModelScale(glm::vec3(0.2, 0.2, 0.2));
     globe->initGeometry();
     camera->addObject(globe);
     
@@ -72,6 +78,9 @@ int main(int argc, char** argv)
     //Mouse events
     glutMotionFunc(motionFunction);
     glutMouseFunc(mouseEvent);
+    
+    //Keyboard
+    glutKeyboardFunc(keyboardEvent);
     
     glutMainLoop();
     return 0;
