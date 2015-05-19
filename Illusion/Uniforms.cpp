@@ -8,28 +8,28 @@
 
 #include "Uniforms.h"
 
-Uniforms::Uniforms(std::string name, void *value, UniformType type, GLuint program) {
-    _shaderProgram = program;
-    addUniform(name, value, type);
+template<> void Uniform<glm::vec3>::apply() {
+    
 }
 
-void Uniforms::addUniform(std::string name, void *value, UniformType type) {
-    GLint uniformLocation = glGetUniformLocation(_shaderProgram, name.c_str());
-    if (uniformLocation == -1) {
-        std::cout << "Warning:: Couldn't find uniform in shader program " << name << std::endl;
-        return;
-    }
+template <typename T>
+void Uniform::Uniform(std::string name, T vec) {
     
-    Uniform uni;
-    uni.value = value;
-    uni.uniformLocation = uniformLocation;
-    uni.type = type;
-    
-    _uniformList.push_back(uni);
+}
+
+Uniforms::Uniforms(GLuint program) {
+    _shaderProgram = program;
+}
+
+void Uniforms::addUniform(UniformGeneric *uniform) {
+    _uniformList.push_back(uniform);
 }
 
 
 
 void Uniforms::applyUniforms() {
-    
+}
+
+void Uniforms::apply(glm::vec3 &vec3) {
+    std::cout << "Apply vec3" << std::endl;
 }

@@ -12,30 +12,45 @@
 #include <OpenGL/gl3.h>
 #include <iostream>
 #include <vector>
+#include <map>
 #include "glm/fwd.hpp"
 #include "glm/glm.hpp"
 
-enum UniformType{
-    Type_Matrix4fv = (1 << 0),
-    Type_Uniform3f = (1 << 1)
+class UniformGeneric {
+    virtual void apply();
+};
+
+
+template <class T>
+class Uniform : public UniformGeneric {
+    T value;
+    std::string _name;
+public:
+    Uniform(std::string name, T vec3) {
+        value = vec3;
+        _name = name;
+    }
+    
+    virtual void apply() = 0;
 };
 
 class Uniforms {
-    GLuint _shaderProgram;
-    
-    struct Uniform{
-        GLint uniformLocation;
-        void *value;
-        UniformType type;
+    enum UniformType{
+        Type_Matrix4fv = (1 << 0),
+        Type_Uniform3f = (1 << 1)
     };
     
-    std::vector<Uniform> _uniformList;
-public:
-    Uniforms(std::string name, void *value, UniformType type, GLuint program);
-    Uniforms(GLuint program);
-    void addUniform(std::string name, void *value, UniformType type);
+    std::vector<UniformGeneric*> _uniformList;
     
-    virtual void applyUniforms();
+    GLuint _shaderProgram;
+    
+public:
+    Uniforms(GLuint program);
+    void addUniform(UniformGeneric *uniform);
+    
+    void applyUniforms();
+    
+    void apply(glm::vec3 &vec3);
 };
 
 #endif /* defined(__Illusion__Uniforms__) */

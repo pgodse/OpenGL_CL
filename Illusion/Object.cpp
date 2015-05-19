@@ -108,5 +108,5 @@ void Object::initGeometry() {
     dirVecUniform = glGetUniformLocation(shaderProgram, "dirLightVec");
     
     //Uniforms uni("dirLightColor", new Object(), shaderProgram);
-    
+    Uniform<glm::vec2> uni("aa", glm::vec2(1,1));
 }

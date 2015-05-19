@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DABB5ED1B0B9FE400967BCF /* osgdb_imageios.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB9821A1B0B9AAD00D7CC78 /* osgdb_imageios.so */; };
+		0DB982041B0B8B5E00D7CC78 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DB982031B0B8B5E00D7CC78 /* main.cpp */; };
+		0DB9820B1B0B8BD900D7CC78 /* libosgs.3.3.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB9820A1B0B8BD900D7CC78 /* libosgs.3.3.8.dylib */; };
+		0DB9820D1B0B8CC000D7CC78 /* libosgViewers.3.3.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB9820C1B0B8CC000D7CC78 /* libosgViewers.3.3.8.dylib */; };
+		0DB9820F1B0B8D3200D7CC78 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB9820E1B0B8D3200D7CC78 /* GLUT.framework */; };
+		0DB982121B0B8D5400D7CC78 /* libosgDBs.3.3.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB982101B0B8D5400D7CC78 /* libosgDBs.3.3.8.dylib */; };
+		0DB982131B0B8D5500D7CC78 /* libosgGAs.3.3.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB982111B0B8D5400D7CC78 /* libosgGAs.3.3.8.dylib */; };
+		0DB982151B0B8DE600D7CC78 /* libOpenThreadss.3.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB982141B0B8DE600D7CC78 /* libOpenThreadss.3.3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0DB981FE1B0B8B5E00D7CC78 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DB982001B0B8B5E00D7CC78 /* osg_desktop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = osg_desktop; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DB982031B0B8B5E00D7CC78 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0DB9820A1B0B8BD900D7CC78 /* libosgs.3.3.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgs.3.3.8.dylib; path = ../../osg/lib/libosgs.3.3.8.dylib; sourceTree = "<group>"; };
+		0DB9820C1B0B8CC000D7CC78 /* libosgViewers.3.3.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgViewers.3.3.8.dylib; path = ../../osg/lib/libosgViewers.3.3.8.dylib; sourceTree = "<group>"; };
+		0DB9820E1B0B8D3200D7CC78 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		0DB982101B0B8D5400D7CC78 /* libosgDBs.3.3.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgDBs.3.3.8.dylib; path = ../../osg/lib/libosgDBs.3.3.8.dylib; sourceTree = "<group>"; };
+		0DB982111B0B8D5400D7CC78 /* libosgGAs.3.3.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgGAs.3.3.8.dylib; path = ../../osg/lib/libosgGAs.3.3.8.dylib; sourceTree = "<group>"; };
+		0DB982141B0B8DE600D7CC78 /* libOpenThreadss.3.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenThreadss.3.3.0.dylib; path = ../../osg/lib/libOpenThreadss.3.3.0.dylib; sourceTree = "<group>"; };
+		0DB982171B0B94FF00D7CC78 /* tex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tex.jpg; sourceTree = "<group>"; };
+		0DB9821A1B0B9AAD00D7CC78 /* osgdb_imageios.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = osgdb_imageios.so; path = ../../osg/lib/osgdb_imageios.so; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DB981FD1B0B8B5E00D7CC78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB982151B0B8DE600D7CC78 /* libOpenThreadss.3.3.0.dylib in Frameworks */,
+				0DB982131B0B8D5500D7CC78 /* libosgGAs.3.3.8.dylib in Frameworks */,
+				0DB982121B0B8D5400D7CC78 /* libosgDBs.3.3.8.dylib in Frameworks */,
+				0DB9820F1B0B8D3200D7CC78 /* GLUT.framework in Frameworks */,
+				0DB9820D1B0B8CC000D7CC78 /* libosgViewers.3.3.8.dylib in Frameworks */,
+				0DB9820B1B0B8BD900D7CC78 /* libosgs.3.3.8.dylib in Frameworks */,
+				0DABB5ED1B0B9FE400967BCF /* osgdb_imageios.so in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DB981F71B0B8B5E00D7CC78 = {
+			isa = PBXGroup;
+			children = (
+				0DB9820E1B0B8D3200D7CC78 /* GLUT.framework */,
+				0DB982021B0B8B5E00D7CC78 /* osg_desktop */,
+				0DB982011B0B8B5E00D7CC78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DB982011B0B8B5E00D7CC78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DB982001B0B8B5E00D7CC78 /* osg_desktop */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DB982021B0B8B5E00D7CC78 /* osg_desktop */ = {
+			isa = PBXGroup;
+			children = (
+				0DB982171B0B94FF00D7CC78 /* tex.jpg */,
+				0DB982141B0B8DE600D7CC78 /* libOpenThreadss.3.3.0.dylib */,
+				0DB9820A1B0B8BD900D7CC78 /* libosgs.3.3.8.dylib */,
+				0DB9820C1B0B8CC000D7CC78 /* libosgViewers.3.3.8.dylib */,
+				0DB982101B0B8D5400D7CC78 /* libosgDBs.3.3.8.dylib */,
+				0DB982111B0B8D5400D7CC78 /* libosgGAs.3.3.8.dylib */,
+				0DB9821A1B0B9AAD00D7CC78 /* osgdb_imageios.so */,
+				0DB982031B0B8B5E00D7CC78 /* main.cpp */,
+			);
+			path = osg_desktop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DB981FF1B0B8B5E00D7CC78 /* osg_desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DB982071B0B8B5E00D7CC78 /* Build configuration list for PBXNativeTarget "osg_desktop" */;
+			buildPhases = (
+				0DB981FC1B0B8B5E00D7CC78 /* Sources */,
+				0DB981FD1B0B8B5E00D7CC78 /* Frameworks */,
+				0DB981FE1B0B8B5E00D7CC78 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = osg_desktop;
+			productName = osg_desktop;
+			productReference = 0DB982001B0B8B5E00D7CC78 /* osg_desktop */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DB981F81B0B8B5E00D7CC78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Prabhat Godse";
+				TargetAttributes = {
+					0DB981FF1B0B8B5E00D7CC78 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 0DB981FB1B0B8B5E00D7CC78 /* Build configuration list for PBXProject "osg_desktop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0DB981F71B0B8B5E00D7CC78;
+			productRefGroup = 0DB982011B0B8B5E00D7CC78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DB981FF1B0B8B5E00D7CC78 /* osg_desktop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DB981FC1B0B8B5E00D7CC78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB982041B0B8B5E00D7CC78 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0DB982051B0B8B5E00D7CC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0DB982061B0B8B5E00D7CC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0DB982081B0B8B5E00D7CC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/prabhatgodse/Documents/workspace/osg/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/prabhatgodse/Documents/workspace/osg/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-o",
+					osgdb_imageios.so,
+				);
+				OTHER_LDFLAGS = "-osgdb_imageios.so";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0DB982091B0B8B5E00D7CC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/prabhatgodse/Documents/workspace/osg/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/prabhatgodse/Documents/workspace/osg/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-o",
+					osgdb_imageios.so,
+				);
+				OTHER_LDFLAGS = "-osgdb_imageios.so";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DB981FB1B0B8B5E00D7CC78 /* Build configuration list for PBXProject "osg_desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DB982051B0B8B5E00D7CC78 /* Debug */,
+				0DB982061B0B8B5E00D7CC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DB982071B0B8B5E00D7CC78 /* Build configuration list for PBXNativeTarget "osg_desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DB982081B0B8B5E00D7CC78 /* Debug */,
+				0DB982091B0B8B5E00D7CC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DB981F81B0B8B5E00D7CC78 /* Project object */;
+}
