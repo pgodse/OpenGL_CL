@@ -10,10 +10,12 @@
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtx/quaternion.hpp"
+#include <GLUT/GLUT.h>
 
 Camera::Camera(CameraType type, float width, float height) {
     _type = type;
-    _eyePosition = glm::vec3(0, 0, 5);
+    _zoom = -15;
+    _eyePosition = glm::vec3(0, 0, _zoom);
     _orbitSpeed = 0.2;
     cameraRotation = glm::mat4();
     initMatrix(width, height);
@@ -39,6 +41,21 @@ void Camera::screenReshape(float w, float h) {
     glViewport(0, 0, w, h);
 }
 
+void Camera::keyboardEvent(unsigned char key, int x, int y) {
+    switch (key) {
+        case 'q':
+            _zoom += 1.0;
+            break;
+        case 'a':
+            _zoom -= 1.0;
+        default:
+            break;
+    }
+    viewMatrix = glm::mat4();
+    viewMatrix = glm::translate(viewMatrix, glm::vec3(0, 0, _zoom));
+    viewMatrix = viewMatrix * cameraRotation;
+}
+
 void Camera::mouseEvent(int button, int state, int x, int y) {
     _prevX = x; _prevY = y;
 }
@@ -53,7 +70,7 @@ void Camera::mouseMove(int x, int y) {
     _prevY = y;
     
     viewMatrix = glm::mat4();
-    viewMatrix = glm::translate(viewMatrix, glm::vec3(0, 0, -5));
+    viewMatrix = glm::translate(viewMatrix, glm::vec3(0, 0, _zoom));
     
     glm::mat4 newRotation = glm::mat4();
     newRotation = glm::rotate(newRotation, _horizontalAngle, glm::vec3(0, 1, 0));

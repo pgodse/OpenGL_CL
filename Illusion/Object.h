@@ -14,6 +14,7 @@
 #include <iostream>
 #include "glm/fwd.hpp"
 #include "glm/glm.hpp"
+#include "Uniforms.h"
 
 class Object {
     GLuint shaderProgram;
@@ -25,9 +26,18 @@ class Object {
     GLint dirVecUniform, dirColorUniform;
     glm::mat4 _projView, _viewMatrix, _normalMatrix, _modelMatrix;
     void destroy();
+    
+    Uniforms *_uniforms;
+    
+    std::string _objFile;
 public:
     Object();
     Object(std::string vertexSource, std::string fragmentSource);
+    
+    void setObjFile(std::string file);
+    
+    void setModelScale(glm::vec3 scale);
+    void setModelTranslate(glm::vec3 trans);
     
     void setProjectionViewMatrix(glm::mat4 projMat, glm::mat4 viewMat);
     virtual void drawObject();

@@ -6,10 +6,14 @@ in vec3 transformedNormal;
 uniform vec3 dirLightVec;
 uniform vec3 dirLightColor;
 
+uniform vec3 baseColor;
+uniform vec3 specularColor;
+uniform vec3 ambientColor;
+
 void main()
 {
 
     float lightVal = max(dot(dirLightVec, transformedNormal), 0);
     
-    color = vec3(0.3, 0.5, 0.2) + dirLightColor * lightVal;
+    color = baseColor * dirLightColor * lightVal + ambientColor;
 }

@@ -34,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D3E61961AD9E78100D6FAF5 /* globe.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = globe.obj; sourceTree = "<group>"; };
 		0D7BFCBC1AC84C3600323D47 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		0D7BFCBD1AC84C3600323D47 /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
 		0D7BFCBF1AC84CB000323D47 /* SimpleFragmentShader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SimpleFragmentShader.frag; sourceTree = "<group>"; };
@@ -639,6 +640,7 @@
 			isa = PBXGroup;
 			children = (
 				0D7BFDDB1AC8D50B00323D47 /* box.obj */,
+				0D3E61961AD9E78100D6FAF5 /* globe.obj */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -826,6 +828,7 @@
 		0DECDC9B1AC7A9E4007D9048 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -833,6 +836,7 @@
 		0DECDC9C1AC7A9E4007D9048 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

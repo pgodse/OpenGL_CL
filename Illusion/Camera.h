@@ -29,6 +29,7 @@ class Camera {
     glm::mat4 cameraRotation;
     
     glm::vec3 _eyePosition;
+    float _zoom;
     
     void initMatrix(float width, float height);
     
@@ -43,6 +44,8 @@ public:
     
     void mouseMove(int x, int y);
     void mouseEvent(int button, int state, int x, int y);
+    
+    void keyboardEvent(unsigned char key, int x, int y);
     
     void addObject(Object *obj);
     
