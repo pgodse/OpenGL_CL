@@ -28,12 +28,14 @@
 #include <osgViewer/ViewerEventHandlers>
 #include <osgGA/TrackballManipulator>
 #include <osgDB/Registry>
-#include <osgDB/ReadFile>
 #include <osg/ShapeDrawable>
 #include <osg/Texture2D>
+#include <osgDB/ReadFile>
+#include <osgDB/FileUtils>
+#include <osgDB/FileNameUtils>
 
-USE_OSGPLUGIN(osg)
-USE_OSGPLUGIN(imageio)
+//USE_OSGPLUGIN(osg)
+//USE_OSGPLUGIN(imageio)
 
 osg::ref_ptr<osgViewer::Viewer> viewer;
 osg::observer_ptr<osgViewer::GraphicsWindow> window;
@@ -122,6 +124,7 @@ int main( int argc, char **argv )
     glutMotionFunc( mousemove );
     glutKeyboardFunc( keyboard );
     
+    osg::setNotifyLevel(osg::DEBUG_INFO);
     osg::Geode *geode = new osg::Geode();
     geode->addDrawable(new osg::ShapeDrawable(new osg::Sphere(osg::Vec3(0.0f,0.0f,0.0f),5),0));
     

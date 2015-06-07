@@ -13,9 +13,9 @@ template<> void Uniform<glm::vec3>::apply() {
 }
 
 template <typename T>
-void Uniform::Uniform(std::string name, T vec) {
-    
-}
+//void Uniform::Uniform(std::string name, T vec) {
+//    
+//}
 
 Uniforms::Uniforms(GLuint program) {
     _shaderProgram = program;

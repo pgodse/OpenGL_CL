@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2B487372-4E92-46E3-8A76-0E0CCC9FBECF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Illusion</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C6C8800E9895AAE6D01C9397F0F31E8805416A4E</key>
 		<string>https://github.com/pgodse/OpenGL_CL.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Illusion.xcodeproj/project.xcworkspace</string>
+	<string>Illusion.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C6C8800E9895AAE6D01C9397F0F31E8805416A4E</key>

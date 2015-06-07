@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DABB5ED1B0B9FE400967BCF /* osgdb_imageios.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB9821A1B0B9AAD00D7CC78 /* osgdb_imageios.so */; };
+		0D0E52271B0FED2200FA0B59 /* libOpenThreadss.3.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E52211B0FED2200FA0B59 /* libOpenThreadss.3.2.1.dylib */; };
+		0D0E52291B0FED2200FA0B59 /* libosgDBs.3.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E52231B0FED2200FA0B59 /* libosgDBs.3.2.1.dylib */; };
+		0D0E522A1B0FED2200FA0B59 /* libosgGAs.3.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E52241B0FED2200FA0B59 /* libosgGAs.3.2.1.dylib */; };
+		0D0E522B1B0FED2200FA0B59 /* libosgs.3.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E52251B0FED2200FA0B59 /* libosgs.3.2.1.dylib */; };
+		0D0E522C1B0FED2200FA0B59 /* libosgViewers.3.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E52261B0FED2200FA0B59 /* libosgViewers.3.2.1.dylib */; };
+		0D0E52301B0FEEC200FA0B59 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E522F1B0FEEC200FA0B59 /* GLUT.framework */; };
+		0D0E52341B0FF1E800FA0B59 /* libosgdb_imageio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E52331B0FF1E800FA0B59 /* libosgdb_imageio.dylib */; };
 		0DB982041B0B8B5E00D7CC78 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DB982031B0B8B5E00D7CC78 /* main.cpp */; };
-		0DB9820B1B0B8BD900D7CC78 /* libosgs.3.3.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB9820A1B0B8BD900D7CC78 /* libosgs.3.3.8.dylib */; };
-		0DB9820D1B0B8CC000D7CC78 /* libosgViewers.3.3.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB9820C1B0B8CC000D7CC78 /* libosgViewers.3.3.8.dylib */; };
-		0DB9820F1B0B8D3200D7CC78 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB9820E1B0B8D3200D7CC78 /* GLUT.framework */; };
-		0DB982121B0B8D5400D7CC78 /* libosgDBs.3.3.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB982101B0B8D5400D7CC78 /* libosgDBs.3.3.8.dylib */; };
-		0DB982131B0B8D5500D7CC78 /* libosgGAs.3.3.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB982111B0B8D5400D7CC78 /* libosgGAs.3.3.8.dylib */; };
-		0DB982151B0B8DE600D7CC78 /* libOpenThreadss.3.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB982141B0B8DE600D7CC78 /* libOpenThreadss.3.3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,16 +30,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D0E52211B0FED2200FA0B59 /* libOpenThreadss.3.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenThreadss.3.2.1.dylib; path = "../../OpenSceneGraph-3.2.1/lib/libOpenThreadss.3.2.1.dylib"; sourceTree = "<group>"; };
+		0D0E52231B0FED2200FA0B59 /* libosgDBs.3.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgDBs.3.2.1.dylib; path = "../../OpenSceneGraph-3.2.1/lib/libosgDBs.3.2.1.dylib"; sourceTree = "<group>"; };
+		0D0E52241B0FED2200FA0B59 /* libosgGAs.3.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgGAs.3.2.1.dylib; path = "../../OpenSceneGraph-3.2.1/lib/libosgGAs.3.2.1.dylib"; sourceTree = "<group>"; };
+		0D0E52251B0FED2200FA0B59 /* libosgs.3.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgs.3.2.1.dylib; path = "../../OpenSceneGraph-3.2.1/lib/libosgs.3.2.1.dylib"; sourceTree = "<group>"; };
+		0D0E52261B0FED2200FA0B59 /* libosgViewers.3.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgViewers.3.2.1.dylib; path = "../../OpenSceneGraph-3.2.1/lib/libosgViewers.3.2.1.dylib"; sourceTree = "<group>"; };
+		0D0E522F1B0FEEC200FA0B59 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		0D0E52331B0FF1E800FA0B59 /* libosgdb_imageio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgdb_imageio.dylib; path = "../../OpenSceneGraph-3.2.1/lib/libosgdb_imageio.dylib"; sourceTree = "<group>"; };
 		0DB982001B0B8B5E00D7CC78 /* osg_desktop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = osg_desktop; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB982031B0B8B5E00D7CC78 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		0DB9820A1B0B8BD900D7CC78 /* libosgs.3.3.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgs.3.3.8.dylib; path = ../../osg/lib/libosgs.3.3.8.dylib; sourceTree = "<group>"; };
-		0DB9820C1B0B8CC000D7CC78 /* libosgViewers.3.3.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgViewers.3.3.8.dylib; path = ../../osg/lib/libosgViewers.3.3.8.dylib; sourceTree = "<group>"; };
-		0DB9820E1B0B8D3200D7CC78 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		0DB982101B0B8D5400D7CC78 /* libosgDBs.3.3.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgDBs.3.3.8.dylib; path = ../../osg/lib/libosgDBs.3.3.8.dylib; sourceTree = "<group>"; };
-		0DB982111B0B8D5400D7CC78 /* libosgGAs.3.3.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgGAs.3.3.8.dylib; path = ../../osg/lib/libosgGAs.3.3.8.dylib; sourceTree = "<group>"; };
-		0DB982141B0B8DE600D7CC78 /* libOpenThreadss.3.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenThreadss.3.3.0.dylib; path = ../../osg/lib/libOpenThreadss.3.3.0.dylib; sourceTree = "<group>"; };
 		0DB982171B0B94FF00D7CC78 /* tex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tex.jpg; sourceTree = "<group>"; };
-		0DB9821A1B0B9AAD00D7CC78 /* osgdb_imageios.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = osgdb_imageios.so; path = ../../osg/lib/osgdb_imageios.so; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,13 +47,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DB982151B0B8DE600D7CC78 /* libOpenThreadss.3.3.0.dylib in Frameworks */,
-				0DB982131B0B8D5500D7CC78 /* libosgGAs.3.3.8.dylib in Frameworks */,
-				0DB982121B0B8D5400D7CC78 /* libosgDBs.3.3.8.dylib in Frameworks */,
-				0DB9820F1B0B8D3200D7CC78 /* GLUT.framework in Frameworks */,
-				0DB9820D1B0B8CC000D7CC78 /* libosgViewers.3.3.8.dylib in Frameworks */,
-				0DB9820B1B0B8BD900D7CC78 /* libosgs.3.3.8.dylib in Frameworks */,
-				0DABB5ED1B0B9FE400967BCF /* osgdb_imageios.so in Frameworks */,
+				0D0E52301B0FEEC200FA0B59 /* GLUT.framework in Frameworks */,
+				0D0E52341B0FF1E800FA0B59 /* libosgdb_imageio.dylib in Frameworks */,
+				0D0E522B1B0FED2200FA0B59 /* libosgs.3.2.1.dylib in Frameworks */,
+				0D0E522A1B0FED2200FA0B59 /* libosgGAs.3.2.1.dylib in Frameworks */,
+				0D0E522C1B0FED2200FA0B59 /* libosgViewers.3.2.1.dylib in Frameworks */,
+				0D0E52271B0FED2200FA0B59 /* libOpenThreadss.3.2.1.dylib in Frameworks */,
+				0D0E52291B0FED2200FA0B59 /* libosgDBs.3.2.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 		0DB981F71B0B8B5E00D7CC78 = {
 			isa = PBXGroup;
 			children = (
-				0DB9820E1B0B8D3200D7CC78 /* GLUT.framework */,
+				0D0E522F1B0FEEC200FA0B59 /* GLUT.framework */,
 				0DB982021B0B8B5E00D7CC78 /* osg_desktop */,
 				0DB982011B0B8B5E00D7CC78 /* Products */,
 			);
@@ -81,12 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				0DB982171B0B94FF00D7CC78 /* tex.jpg */,
-				0DB982141B0B8DE600D7CC78 /* libOpenThreadss.3.3.0.dylib */,
-				0DB9820A1B0B8BD900D7CC78 /* libosgs.3.3.8.dylib */,
-				0DB9820C1B0B8CC000D7CC78 /* libosgViewers.3.3.8.dylib */,
-				0DB982101B0B8D5400D7CC78 /* libosgDBs.3.3.8.dylib */,
-				0DB982111B0B8D5400D7CC78 /* libosgGAs.3.3.8.dylib */,
-				0DB9821A1B0B9AAD00D7CC78 /* osgdb_imageios.so */,
+				0D0E52211B0FED2200FA0B59 /* libOpenThreadss.3.2.1.dylib */,
+				0D0E52231B0FED2200FA0B59 /* libosgDBs.3.2.1.dylib */,
+				0D0E52241B0FED2200FA0B59 /* libosgGAs.3.2.1.dylib */,
+				0D0E52251B0FED2200FA0B59 /* libosgs.3.2.1.dylib */,
+				0D0E52261B0FED2200FA0B59 /* libosgViewers.3.2.1.dylib */,
+				0D0E52331B0FF1E800FA0B59 /* libosgdb_imageio.dylib */,
 				0DB982031B0B8B5E00D7CC78 /* main.cpp */,
 			);
 			path = osg_desktop;
@@ -236,21 +236,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/Users/prabhatgodse/Documents/workspace/osg/include,
+					"/Users/prabhatgodse/Documents/workspace/OpenSceneGraph-3.2.1/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/prabhatgodse/Documents/workspace/osg/lib,
+					"/Users/prabhatgodse/Documents/workspace/OpenSceneGraph-3.2.1/lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-o",
 					osgdb_imageios.so,
 				);
-				OTHER_LDFLAGS = "-osgdb_imageios.so";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -259,21 +261,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/Users/prabhatgodse/Documents/workspace/osg/include,
+					"/Users/prabhatgodse/Documents/workspace/OpenSceneGraph-3.2.1/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/prabhatgodse/Documents/workspace/osg/lib,
+					"/Users/prabhatgodse/Documents/workspace/OpenSceneGraph-3.2.1/lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-o",
 					osgdb_imageios.so,
 				);
-				OTHER_LDFLAGS = "-osgdb_imageios.so";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
