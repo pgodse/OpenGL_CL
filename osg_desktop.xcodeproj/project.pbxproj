@@ -14,6 +14,8 @@
 		0D0E522C1B0FED2200FA0B59 /* libosgViewers.3.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E52261B0FED2200FA0B59 /* libosgViewers.3.2.1.dylib */; };
 		0D0E52301B0FEEC200FA0B59 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E522F1B0FEEC200FA0B59 /* GLUT.framework */; };
 		0D0E52341B0FF1E800FA0B59 /* libosgdb_imageio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E52331B0FF1E800FA0B59 /* libosgdb_imageio.dylib */; };
+		0D0E52D31B24D29A00FA0B59 /* libosgParticles.3.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E52D21B24D29A00FA0B59 /* libosgParticles.3.2.1.dylib */; };
+		0D0E52D61B24FD8B00FA0B59 /* ShaderComposer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D0E52D41B24FD8B00FA0B59 /* ShaderComposer.cpp */; };
 		0DB982041B0B8B5E00D7CC78 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DB982031B0B8B5E00D7CC78 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,12 @@
 		0D0E52261B0FED2200FA0B59 /* libosgViewers.3.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgViewers.3.2.1.dylib; path = "../../OpenSceneGraph-3.2.1/lib/libosgViewers.3.2.1.dylib"; sourceTree = "<group>"; };
 		0D0E522F1B0FEEC200FA0B59 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		0D0E52331B0FF1E800FA0B59 /* libosgdb_imageio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgdb_imageio.dylib; path = "../../OpenSceneGraph-3.2.1/lib/libosgdb_imageio.dylib"; sourceTree = "<group>"; };
+		0D0E52D11B24C54E00FA0B59 /* box.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = box.obj; path = osg_desktop/box.obj; sourceTree = "<group>"; };
+		0D0E52D21B24D29A00FA0B59 /* libosgParticles.3.2.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libosgParticles.3.2.1.dylib; path = "../../OpenSceneGraph-3.2.1/lib/libosgParticles.3.2.1.dylib"; sourceTree = "<group>"; };
+		0D0E52D41B24FD8B00FA0B59 /* ShaderComposer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderComposer.cpp; sourceTree = "<group>"; };
+		0D0E52D51B24FD8B00FA0B59 /* ShaderComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderComposer.h; sourceTree = "<group>"; };
+		0D0E52D71B2502A700FA0B59 /* PointLight.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PointLight.vert; sourceTree = "<group>"; };
+		0D0E52D81B250E7B00FA0B59 /* PointLight.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PointLight.frag; sourceTree = "<group>"; };
 		0DB982001B0B8B5E00D7CC78 /* osg_desktop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = osg_desktop; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB982031B0B8B5E00D7CC78 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0DB982171B0B94FF00D7CC78 /* tex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tex.jpg; sourceTree = "<group>"; };
@@ -51,6 +59,7 @@
 				0D0E52341B0FF1E800FA0B59 /* libosgdb_imageio.dylib in Frameworks */,
 				0D0E522B1B0FED2200FA0B59 /* libosgs.3.2.1.dylib in Frameworks */,
 				0D0E522A1B0FED2200FA0B59 /* libosgGAs.3.2.1.dylib in Frameworks */,
+				0D0E52D31B24D29A00FA0B59 /* libosgParticles.3.2.1.dylib in Frameworks */,
 				0D0E522C1B0FED2200FA0B59 /* libosgViewers.3.2.1.dylib in Frameworks */,
 				0D0E52271B0FED2200FA0B59 /* libOpenThreadss.3.2.1.dylib in Frameworks */,
 				0D0E52291B0FED2200FA0B59 /* libosgDBs.3.2.1.dylib in Frameworks */,
@@ -60,11 +69,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0E52CF1B24C45A00FA0B59 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D0E52D11B24C54E00FA0B59 /* box.obj */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
 		0DB981F71B0B8B5E00D7CC78 = {
 			isa = PBXGroup;
 			children = (
 				0D0E522F1B0FEEC200FA0B59 /* GLUT.framework */,
 				0DB982021B0B8B5E00D7CC78 /* osg_desktop */,
+				0D0E52CF1B24C45A00FA0B59 /* Content */,
 				0DB982011B0B8B5E00D7CC78 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +105,12 @@
 				0D0E52251B0FED2200FA0B59 /* libosgs.3.2.1.dylib */,
 				0D0E52261B0FED2200FA0B59 /* libosgViewers.3.2.1.dylib */,
 				0D0E52331B0FF1E800FA0B59 /* libosgdb_imageio.dylib */,
+				0D0E52D21B24D29A00FA0B59 /* libosgParticles.3.2.1.dylib */,
+				0D0E52D71B2502A700FA0B59 /* PointLight.vert */,
+				0D0E52D81B250E7B00FA0B59 /* PointLight.frag */,
 				0DB982031B0B8B5E00D7CC78 /* main.cpp */,
+				0D0E52D41B24FD8B00FA0B59 /* ShaderComposer.cpp */,
+				0D0E52D51B24FD8B00FA0B59 /* ShaderComposer.h */,
 			);
 			path = osg_desktop;
 			sourceTree = "<group>";
@@ -148,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0E52D61B24FD8B00FA0B59 /* ShaderComposer.cpp in Sources */,
 				0DB982041B0B8B5E00D7CC78 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
